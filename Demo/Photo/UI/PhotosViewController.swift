@@ -69,7 +69,7 @@ class PhotosViewController: UIViewController {
     
     // MARK: Private methods
     private func initUI() {
-        self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationController?.navigationBar.prefersLargeTitles = false
         self.tableView.register(UINib(nibName: "PhotoTableViewCell", bundle: nil), forCellReuseIdentifier: "PhotoTableViewCell")
         self.refreshControl.attributedTitle = NSAttributedString(string: "PULL_TO_REFRESH".localized)
         self.refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
@@ -116,7 +116,7 @@ extension PhotosViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PhotoTableViewCell", for: indexPath) as! PhotoTableViewCell
         let collection = self.photoCollections[indexPath.row]
-        cell.photoCollectionTitleLabel.text = collection.title
+        cell.photoCollectionTitleLabel.text = collection.title + " ＞" // fake disclosure indicator to encourage the user to tap to see the collectionView in fullScreen (PhotoCollectionViewController)
         cell.photoCollectionDescriptionLabel.text = collection.description
         cell.paginationLabel.text = "\(collection.numberOfDisplayedPhotos)/\(collection.numberOfPhotos)"
         cell.collectionView?.register(UINib(nibName: "PhotoCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "PhotoCollectionViewCell")

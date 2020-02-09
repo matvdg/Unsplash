@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let navigationController = UINavigationController(rootViewController: PhotosViewController.instantiate())
         navigationController.navigationBar.prefersLargeTitles = true
-        navigationController.navigationBar.tintColor = .white
+        navigationController.navigationBar.tintColor = .label
         self.window?.rootViewController = navigationController
         self.window?.makeKeyAndVisible()
         print(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0])

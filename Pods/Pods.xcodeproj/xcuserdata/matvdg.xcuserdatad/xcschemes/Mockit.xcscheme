@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "77F19842A909D1E49221E206B9011949"
-               BuildableName = "Mockit.framework"
+               BuildableName = "libMockit.a"
                BlueprintName = "Mockit"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

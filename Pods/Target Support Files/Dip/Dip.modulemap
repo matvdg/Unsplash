@@ -1,4 +1,4 @@
-framework module Dip {
+module Dip {
   umbrella header "Dip-umbrella.h"
 
   export *

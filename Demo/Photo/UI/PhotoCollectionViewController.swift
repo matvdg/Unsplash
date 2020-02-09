@@ -59,7 +59,6 @@ class PhotoCollectionViewController: UIViewController {
     // MARK: Private methods
     private func initUI() {
         self.collectionView.register(UINib(nibName: "PhotoCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "PhotoCollectionViewCell")
-        self.navigationController?.navigationBar.prefersLargeTitles = false
         self.title = self.photoCollection?.title
         self.collectionView.delegate = self
         self.collectionView.dataSource = self

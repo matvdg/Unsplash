@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A83D8CA1C46200A73989FC3AD76FCBE3"
-               BuildableName = "Dip.framework"
+               BuildableName = "libDip.a"
                BlueprintName = "Dip"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

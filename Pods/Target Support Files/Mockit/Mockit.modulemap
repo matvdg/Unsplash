@@ -1,4 +1,4 @@
-framework module Mockit {
+module Mockit {
   umbrella header "Mockit-umbrella.h"
 
   export *

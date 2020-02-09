@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C940B6165326FC972C6B91651A31C760"
-               BuildableName = "UnsplasherSDK.framework"
+               BuildableName = "libUnsplasherSDK.a"
                BlueprintName = "UnsplasherSDK"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

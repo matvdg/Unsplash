@@ -26,7 +26,6 @@ class PhotoViewController: UIViewController {
     
     // MARK: Lifecycle methods
     override func viewDidLoad() {
-        self.navigationController?.navigationBar.prefersLargeTitles = false
         guard let url = self.photo?.urls?.full else { return }
         self.imageScrollView = UIScrollImageView(frame: self.view.frame, image: #imageLiteral(resourceName: "placeholder"))
         self.imageScrollView.showsVerticalScrollIndicator = false

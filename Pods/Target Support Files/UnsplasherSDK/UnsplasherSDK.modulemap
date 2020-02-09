@@ -1,4 +1,4 @@
-framework module UnsplasherSDK {
+module UnsplasherSDK {
   umbrella header "UnsplasherSDK-umbrella.h"
 
   export *
