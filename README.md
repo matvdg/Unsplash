@@ -1,4 +1,5 @@
 # Unsplash Demo
+![Overview](https://github.com/matvdg/Unsplash/blob/master/Demo.png?raw=true)
 
 This is the main repository for the Unsplash Demo iOS app, built in Swift 5 targeting from iOS 13.2 and later.
 Open the project with Xcode 11.3.1 or later.
