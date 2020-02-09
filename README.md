@@ -29,6 +29,7 @@ The app uses MVVM architecture design pattern and Repository pattern.
 #### Outlooks
 - In this demo project we only have one R (PhotoRepository) at the moment but we could imagine to add a UserRepository to add a favorite feature (we would be able to save favorite photos and retrieve a user's favorite pictures)
 - We have also just one DataSource at the moment (using Unsplasher Swift SDK), but we could imagine the need to plug to a different remote DataSource (such as a REST or GraphQL or Firebase DataSource) or sync data in a local database (such as CoreData or Realm) to let the app run without an internet connection. In that case we would have had a local DataSource (e.g. RealmDataSource) and the PhotoRepository underneath would handle the logic between the local and remote DataSources which both would be plugged to it.
+- Other future improvements or ideas are listed [here](https://github.com/matvdg/Unsplash/issues) 
 
 ## Unit testing
 The layers Repository, ViewModel and ViewController are tested in the target UnsplashTests.
