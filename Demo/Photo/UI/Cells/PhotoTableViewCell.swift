@@ -1,6 +1,6 @@
 //
 //  PhotoCollectionTableViewCell.swift
-//  Unsplash
+//  Demo
 //
 //  Created by Mathieu Vandeginste on 06/02/2020.
 //  Copyright © 2020 matapps. All rights reserved.

@@ -10,7 +10,6 @@
 		779DC9BC75E388E81A004396 /* Pods_DemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C8F7ACF6E9E83DDB0B92A2F /* Pods_DemoTests.framework */; };
 		858F4872408D0E1B3958DD7D /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00FA1C8EDD2796BC14BF3F45 /* Pods_Demo.framework */; };
 		F69AD29723F09E7500FFB5CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F69AD29623F09E7500FFB5CD /* Assets.xcassets */; };
-		F69AD2A523F09E7500FFB5CD /* DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69AD2A423F09E7500FFB5CD /* DemoTests.swift */; };
 		F6A5935423F0A33500E5A6F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A5935323F0A33500E5A6F0 /* AppDelegate.swift */; };
 		F6A5935623F0A35100E5A6F0 /* DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A5935523F0A35100E5A6F0 /* DI.swift */; };
 		F6A5935C23F0A3EF00E5A6F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6A5935B23F0A3EF00E5A6F0 /* LaunchScreen.storyboard */; };
@@ -32,6 +31,8 @@
 		F6A5938423F0A56300E5A6F0 /* PhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6A5938323F0A56300E5A6F0 /* PhotoTableViewCell.xib */; };
 		F6A5938623F0A56800E5A6F0 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A5938523F0A56800E5A6F0 /* PhotoCollectionViewCell.swift */; };
 		F6A5938823F0A56D00E5A6F0 /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6A5938723F0A56D00E5A6F0 /* PhotoCollectionViewCell.xib */; };
+		F6A5938A23F0A98400E5A6F0 /* MockPhotoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A5938923F0A98400E5A6F0 /* MockPhotoDataSource.swift */; };
+		F6A5938C23F0A99200E5A6F0 /* PhotoRepositoryTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A5938B23F0A99200E5A6F0 /* PhotoRepositoryTester.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +56,6 @@
 		F69AD29623F09E7500FFB5CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F69AD29B23F09E7500FFB5CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F69AD2A023F09E7500FFB5CD /* DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F69AD2A423F09E7500FFB5CD /* DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTests.swift; sourceTree = "<group>"; };
 		F69AD2A623F09E7500FFB5CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6A5935323F0A33500E5A6F0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6A5935523F0A35100E5A6F0 /* DI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DI.swift; sourceTree = "<group>"; };
@@ -79,6 +79,8 @@
 		F6A5938323F0A56300E5A6F0 /* PhotoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoTableViewCell.xib; sourceTree = "<group>"; };
 		F6A5938523F0A56800E5A6F0 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		F6A5938723F0A56D00E5A6F0 /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		F6A5938923F0A98400E5A6F0 /* MockPhotoDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockPhotoDataSource.swift; sourceTree = "<group>"; };
+		F6A5938B23F0A99200E5A6F0 /* PhotoRepositoryTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoRepositoryTester.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,7 +157,8 @@
 		F69AD2A323F09E7500FFB5CD /* DemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				F69AD2A423F09E7500FFB5CD /* DemoTests.swift */,
+				F6A5938923F0A98400E5A6F0 /* MockPhotoDataSource.swift */,
+				F6A5938B23F0A99200E5A6F0 /* PhotoRepositoryTester.swift */,
 				F69AD2A623F09E7500FFB5CD /* Info.plist */,
 			);
 			path = DemoTests;
@@ -301,6 +304,7 @@
 					};
 					F69AD29F23F09E7500FFB5CD = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 						TestTargetID = F69AD28923F09E7400FFB5CD;
 					};
 				};
@@ -457,7 +461,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F69AD2A523F09E7500FFB5CD /* DemoTests.swift in Sources */,
+				F6A5938A23F0A98400E5A6F0 /* MockPhotoDataSource.swift in Sources */,
+				F6A5938C23F0A99200E5A6F0 /* PhotoRepositoryTester.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -641,6 +646,7 @@
 			baseConfigurationReference = 2BC059CCCFE53720A496F74D /* Pods-DemoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QJPL572NZY;
 				INFOPLIST_FILE = DemoTests/Info.plist;
@@ -652,6 +658,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.matapps.DemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Demo.app/Demo";
@@ -663,6 +670,7 @@
 			baseConfigurationReference = 0E9E0542CC327D3D3081BCA8 /* Pods-DemoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QJPL572NZY;
 				INFOPLIST_FILE = DemoTests/Info.plist;

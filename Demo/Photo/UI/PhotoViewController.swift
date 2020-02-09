@@ -1,6 +1,6 @@
 //
 //  PhotoViewController.swift
-//  Unsplash
+//  Demo
 //
 //  Created by Mathieu Vandeginste on 07/02/2020.
 //  Copyright © 2020 matapps. All rights reserved.
