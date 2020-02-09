@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PhotoTableViewCell" id="KGk-i7-Jjw" customClass="PhotoTableViewCell" customModule="Unsplash" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="487" height="223"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="487" height="223"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="UbG-0V-Qul">
+                        <rect key="frame" x="0.0" y="65" width="487" height="150"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" sectionInsetReference="safeArea" id="FLp-aF-cfF">
+                            <size key="itemSize" width="150" height="150"/>
+                            <size key="estimatedItemSize" width="150" height="150"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PhotoCollection Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2Cv-hj-uZG">
+                        <rect key="frame" x="20" y="8" width="171.5" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10/30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfz-Gc-N7m">
+                        <rect key="frame" x="437" y="8" width="42" height="20"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                        <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PhotoCollection Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDg-25-8JC">
+                        <rect key="frame" x="20" y="37" width="459" height="20"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                        <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="2Cv-hj-uZG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="1bo-7G-caB"/>
+                    <constraint firstItem="pDg-25-8JC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="4dd-Fn-fL7"/>
+                    <constraint firstItem="pDg-25-8JC" firstAttribute="top" secondItem="2Cv-hj-uZG" secondAttribute="bottom" constant="8" id="Cjk-JD-nwU"/>
+                    <constraint firstAttribute="bottom" secondItem="UbG-0V-Qul" secondAttribute="bottom" constant="8" id="D0f-go-18j"/>
+                    <constraint firstItem="vfz-Gc-N7m" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Uzl-9r-DXm"/>
+                    <constraint firstAttribute="trailing" secondItem="UbG-0V-Qul" secondAttribute="trailing" id="cUR-oB-JBt"/>
+                    <constraint firstAttribute="trailing" secondItem="pDg-25-8JC" secondAttribute="trailing" constant="8" id="lD0-y7-5pt"/>
+                    <constraint firstItem="UbG-0V-Qul" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="lwr-LZ-A9u"/>
+                    <constraint firstAttribute="trailing" secondItem="vfz-Gc-N7m" secondAttribute="trailing" constant="8" id="ncX-6L-8A2"/>
+                    <constraint firstItem="UbG-0V-Qul" firstAttribute="top" secondItem="pDg-25-8JC" secondAttribute="bottom" constant="8" id="orR-8f-LYy"/>
+                    <constraint firstItem="2Cv-hj-uZG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="ycI-xb-UfQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collectionView" destination="UbG-0V-Qul" id="bXH-NB-5G4"/>
+                <outlet property="paginationLabel" destination="vfz-Gc-N7m" id="UwN-JV-2hx"/>
+                <outlet property="photoCollectionDescriptionLabel" destination="pDg-25-8JC" id="MhU-yQ-YdO"/>
+                <outlet property="photoCollectionTitleLabel" destination="2Cv-hj-uZG" id="9Cm-2o-XRI"/>
+            </connections>
+            <point key="canvasLocation" x="258.69565217391306" y="147.65625"/>
+        </tableViewCell>
+    </objects>
+</document>
