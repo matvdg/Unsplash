@@ -3,12 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0C71647B1579DDD20C098F73 /* libPods-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED77FDD3F9C821FB9304C0F3 /* libPods-Demo.a */; };
 		C6793D75049A266721EBBB1E /* libPods-DemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61BD3FBA03C80E02E830F102 /* libPods-DemoTests.a */; };
+		F61931EE23F1547F0080DD42 /* MockPhotoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61931ED23F1547F0080DD42 /* MockPhotoDataSource.swift */; };
+		F61931F023F1548B0080DD42 /* MockPhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61931EF23F1548B0080DD42 /* MockPhotoViewModel.swift */; };
+		F61931F223F164B20080DD42 /* PhotoViewModelTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61931F123F164B20080DD42 /* PhotoViewModelTester.swift */; };
+		F61931F423F172750080DD42 /* PhotosViewControllerTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61931F323F172750080DD42 /* PhotosViewControllerTester.swift */; };
 		F69AD29723F09E7500FFB5CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F69AD29623F09E7500FFB5CD /* Assets.xcassets */; };
 		F6A5935423F0A33500E5A6F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A5935323F0A33500E5A6F0 /* AppDelegate.swift */; };
 		F6A5935623F0A35100E5A6F0 /* DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A5935523F0A35100E5A6F0 /* DI.swift */; };
@@ -31,8 +35,9 @@
 		F6A5938423F0A56300E5A6F0 /* PhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6A5938323F0A56300E5A6F0 /* PhotoTableViewCell.xib */; };
 		F6A5938623F0A56800E5A6F0 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A5938523F0A56800E5A6F0 /* PhotoCollectionViewCell.swift */; };
 		F6A5938823F0A56D00E5A6F0 /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6A5938723F0A56D00E5A6F0 /* PhotoCollectionViewCell.xib */; };
-		F6A5938A23F0A98400E5A6F0 /* MockPhotoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A5938923F0A98400E5A6F0 /* MockPhotoDataSource.swift */; };
+		F6A5938A23F0A98400E5A6F0 /* MockPhotoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A5938923F0A98400E5A6F0 /* MockPhotoRepository.swift */; };
 		F6A5938C23F0A99200E5A6F0 /* PhotoRepositoryTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A5938B23F0A99200E5A6F0 /* PhotoRepositoryTester.swift */; };
+		F6C9FCAD23F178730006DF50 /* PhotoCollectionViewControllerTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C9FCAC23F178730006DF50 /* PhotoCollectionViewControllerTester.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +57,10 @@
 		E77FC9804F2D2D05EEA9FF8E /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		ED77FDD3F9C821FB9304C0F3 /* libPods-Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3927D183BC5B74C7DC8DED3 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
+		F61931ED23F1547F0080DD42 /* MockPhotoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPhotoDataSource.swift; sourceTree = "<group>"; };
+		F61931EF23F1548B0080DD42 /* MockPhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPhotoViewModel.swift; sourceTree = "<group>"; };
+		F61931F123F164B20080DD42 /* PhotoViewModelTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModelTester.swift; sourceTree = "<group>"; };
+		F61931F323F172750080DD42 /* PhotosViewControllerTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewControllerTester.swift; sourceTree = "<group>"; };
 		F69AD28A23F09E7400FFB5CD /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F69AD29623F09E7500FFB5CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F69AD29B23F09E7500FFB5CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,8 +88,9 @@
 		F6A5938323F0A56300E5A6F0 /* PhotoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoTableViewCell.xib; sourceTree = "<group>"; };
 		F6A5938523F0A56800E5A6F0 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		F6A5938723F0A56D00E5A6F0 /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
-		F6A5938923F0A98400E5A6F0 /* MockPhotoDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockPhotoDataSource.swift; sourceTree = "<group>"; };
+		F6A5938923F0A98400E5A6F0 /* MockPhotoRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockPhotoRepository.swift; sourceTree = "<group>"; };
 		F6A5938B23F0A99200E5A6F0 /* PhotoRepositoryTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoRepositoryTester.swift; sourceTree = "<group>"; };
+		F6C9FCAC23F178730006DF50 /* PhotoCollectionViewControllerTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewControllerTester.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +133,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F61931EC23F154720080DD42 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				F61931ED23F1547F0080DD42 /* MockPhotoDataSource.swift */,
+				F6A5938923F0A98400E5A6F0 /* MockPhotoRepository.swift */,
+				F61931EF23F1548B0080DD42 /* MockPhotoViewModel.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		F69AD28123F09E7400FFB5CD = {
 			isa = PBXGroup;
 			children = (
@@ -157,8 +177,11 @@
 		F69AD2A323F09E7500FFB5CD /* DemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				F6A5938923F0A98400E5A6F0 /* MockPhotoDataSource.swift */,
+				F61931EC23F154720080DD42 /* Mocks */,
 				F6A5938B23F0A99200E5A6F0 /* PhotoRepositoryTester.swift */,
+				F61931F123F164B20080DD42 /* PhotoViewModelTester.swift */,
+				F61931F323F172750080DD42 /* PhotosViewControllerTester.swift */,
+				F6C9FCAC23F178730006DF50 /* PhotoCollectionViewControllerTester.swift */,
 				F69AD2A623F09E7500FFB5CD /* Info.plist */,
 			);
 			path = DemoTests;
@@ -425,7 +448,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6A5938A23F0A98400E5A6F0 /* MockPhotoDataSource.swift in Sources */,
+				F61931F423F172750080DD42 /* PhotosViewControllerTester.swift in Sources */,
+				F61931F023F1548B0080DD42 /* MockPhotoViewModel.swift in Sources */,
+				F6A5938A23F0A98400E5A6F0 /* MockPhotoRepository.swift in Sources */,
+				F61931EE23F1547F0080DD42 /* MockPhotoDataSource.swift in Sources */,
+				F6C9FCAD23F178730006DF50 /* PhotoCollectionViewControllerTester.swift in Sources */,
+				F61931F223F164B20080DD42 /* PhotoViewModelTester.swift in Sources */,
 				F6A5938C23F0A99200E5A6F0 /* PhotoRepositoryTester.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,6 +485,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -518,6 +547,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

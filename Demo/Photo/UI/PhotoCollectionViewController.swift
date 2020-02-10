@@ -31,6 +31,13 @@ class PhotoCollectionViewController: UIViewController {
         return vc
     }
     
+    // for unit testing purpose
+    internal static func instantiate(photoCollection: PhotoCollection, vm: PhotoViewModelProtocol) -> PhotoCollectionViewController {
+        let vc = PhotoCollectionViewController.instantiate(photoCollection: photoCollection)
+        vc.viewModel = vm
+        return vc
+    }
+    
     // MARK: Lifecycle methods
     override func viewDidLoad() {
         self.initUI()

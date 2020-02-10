@@ -9,7 +9,10 @@
 import Foundation
 import UnsplasherSDK
 
-struct PhotoCollection {
+struct PhotoCollection: Equatable {
+    
+    static func == (lhs: PhotoCollection, rhs: PhotoCollection) -> Bool { lhs.id == rhs.id }
+    
     var id: UInt32
     var title: String
     var description: String?

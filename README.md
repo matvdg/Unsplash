@@ -34,6 +34,7 @@ The app uses MVVM architecture design pattern and Repository pattern.
 ## Unit testing
 The layers Repository, ViewModel and ViewController are tested in the target UnsplashTests.
 To ensure each layer is independent and well tested, we use protocols and each implementation has a correspondent mock (e.g. PhotoDataSource implements PhotoDataSourceProtocol and has a mock called MockPhotoDataSource), so that we can inject in the underneath layer (such as PhotoRepository) the mock implementation to let test that layer without any dependency.
+![Unit tests](https://github.com/matvdg/Unsplash/blob/master/UnitTests.png?raw=true)
 
 ## Libraries used
 - **RxSwift/RxCocoa/RxTest**: the ReactiveX design pattern adapted to Swift letting us use streams to communicate between layers

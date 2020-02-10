@@ -31,7 +31,7 @@ class PhotosViewController: UIViewController {
     
     // for unit testing purpose
     internal static func instantiate(vm: PhotoViewModelProtocol) -> PhotosViewController {
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController() as! PhotosViewController
+        let vc = PhotosViewController.instantiate()
         vc.viewModel = vm
         return vc
     }

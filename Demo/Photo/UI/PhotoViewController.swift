@@ -26,14 +26,7 @@ class PhotoViewController: UIViewController {
     
     // MARK: Lifecycle methods
     override func viewDidLoad() {
-        guard let url = self.photo?.urls?.full else { return }
-        self.imageScrollView = UIScrollImageView(frame: self.view.frame, image: #imageLiteral(resourceName: "placeholder"))
-        self.imageScrollView.showsVerticalScrollIndicator = false
-        self.imageScrollView.showsHorizontalScrollIndicator = false
-        self.view.addSubview(self.imageScrollView)
-        self.imageScrollView.imageView.af_setImage(withURL: url)
-        self.title = self.photo?.description
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(savePhoto))
+        self.initUI()
     }
     
     override var prefersHomeIndicatorAutoHidden: Bool {
@@ -53,6 +46,17 @@ class PhotoViewController: UIViewController {
     }
     
     // MARK: Private methods
+    private func initUI() {
+        guard let url = self.photo?.urls?.full else { return }
+        self.imageScrollView = UIScrollImageView(frame: self.view.frame, image: #imageLiteral(resourceName: "placeholder"))
+        self.imageScrollView.showsVerticalScrollIndicator = false
+        self.imageScrollView.showsHorizontalScrollIndicator = false
+        self.view.addSubview(self.imageScrollView)
+        self.imageScrollView.imageView.af_setImage(withURL: url)
+        self.title = self.photo?.description
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(savePhoto))
+    }
+    
     @objc private func savePhoto() {
         guard let image = self.imageScrollView.imageView.image else { return }
         UIImageWriteToSavedPhotosAlbum(image, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)

@@ -11,6 +11,7 @@ import Foundation
 import XCTest
 import Mockit
 import RxSwift
+import UnsplasherSDK
 
 class MockPhotoDataSource: PhotoDataSourceProtocol, Mock {
     
@@ -26,6 +27,10 @@ class MockPhotoDataSource: PhotoDataSourceProtocol, Mock {
     
     func getPhotoCollections() -> Single<[PhotoCollection]> {
         return self.callHandler.accept(Single<[PhotoCollection]>.never(), ofFunction: #function, atFile: #file, inLine: #line, withArgs: nil) as! Single<[PhotoCollection]>
+    }
+    
+    func getPhotosUrls(collectionId: UInt32, page: Int) -> Single<[Photo]> {
+        return self.callHandler.accept(Single<[Photo]>.never(), ofFunction: #function, atFile: #file, inLine: #line, withArgs: nil) as! Single<[Photo]>
     }
     
 }
