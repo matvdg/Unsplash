@@ -22,7 +22,7 @@ The app uses MVVM architecture design pattern and Repository pattern.
 ![Overview](https://github.com/matvdg/Unsplash/blob/master/overview.png?raw=true)
 
 #### Description
-- Each View Controller (V) delegates to a View Model (VM) the business logic and subscribe in return to Rx streams from VM to update itself. Many V can share a same instance of a given VM because they depend of the same business logic. (e.g. here PhotosVC and PhotoCollectionVC share the same PhotoVM in order to factorize the same loadMore photos logic)
+- Each View Controller (V) delegates to a View Model (VM) the business logic and subscribe in return to Rx streams from VM to update itself. Many V can share a same instance of a given VM because they depend on the same business logic. (e.g. here PhotosVC and PhotoCollectionVC share the same PhotoVM in order to factorize the same loadMore photos logic)
 - Each VM delegates to one (or more) Repository (R) the data logic and subscribe in return to Rx streams from R to execute its business logic. 
 - Each R delegates to one (or more) DataSource (DS) the data fetching (local, remote, ...) and subscribe in return to Rx streams from DS to execute its data logic. 
 
