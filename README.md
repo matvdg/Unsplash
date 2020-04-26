@@ -40,4 +40,4 @@ To ensure each layer is independent and well tested, we use protocols and each i
 - **RxSwift/RxCocoa/RxTest**: the ReactiveX design pattern adapted to Swift letting us use streams to communicate between layers
 - **Dip**: a dependency injection library to automatically inject the MVVM/Repository/DataSource hierarchy with the appropriate scope. One or several DataSources are injected in a Repository, which is injected in a ViewModel, which is injected in a ViewController and so on...
 - **Mockit**:  a test library used to use mocks, stubs and spies in order to test every case
-- **AlomofireImage**: a library used to cache images locally (better performance and less network usage)
+- **AlamofireImage**: a library used to cache images locally (better performance and less network usage)
